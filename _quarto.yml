@@ -3,8 +3,14 @@ project:
   output-dir: docs
 
 website:
-  title: "WSSD Parents for Balanced Tech Use"
   page-navigation: true
+  title: "WSSD Parents for Balanced Tech Use"
+  description: ""
+  site-url: "https://havenholdthephone.com"
+  
+  repo-url: https://github.com/randyzwitch/havenholdthephone
+  repo-actions: [edit, issue]
+
   navbar:
     background: "#A7D5E8"
     # left:
