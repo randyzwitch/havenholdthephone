@@ -6,7 +6,7 @@ project:
 
 website:
   page-navigation: true
-  title: "Haven Hold The Phone"
+  title: ""
   description: ""
   site-url: "https://havenholdthephone.com"
   
@@ -15,10 +15,13 @@ website:
 
   navbar:
     background: "#A7D5E8"
-    # left:
-    #   - href: index.qmd
-    #     text: Home
-    #   - about.qmd
+    right:
+      - href: index.qmd
+        text: Home
+      - href: mission.qmd
+        text: Mission Statement
+      - href: pledge.qmd
+        text: The Pledge
 
   page-footer:
     left: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
