@@ -20,8 +20,8 @@ website:
         text: Home
       - href: mission.qmd
         text: Mission Statement
-      - href: pledge.qmd
-        text: The Pledge
+      # - href: pledge.qmd
+      #   text: The Pledge
 
   page-footer:
     left: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
