@@ -1,3 +1,33 @@
 ---
 title: "The Pledge"
+execute:
+  echo: false
+jupyter: python3
 ---
+
+Pledge text here
+
+---
+```{python}
+import gspread
+import pandas as pd
+from great_tables import GT
+
+# Read in credentials, open sheet
+gc = gspread.service_account()
+gsheet_file = gc.open("haven_mockup")
+wksht = gsheet_file.sheet1
+
+# Read entire sheet of signatories into list of dicts
+signatories = wksht.get_all_records()
+
+# Format data and display on page
+df = pd.DataFrame.from_records(signatories)
+num_families = df.shape[0]
+
+(
+    GT(df)
+    .tab_header(title=f"{num_families} families have signed the Haven Hold The Phone pledge:")
+)
+
+```
